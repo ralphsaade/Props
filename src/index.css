@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.page {
+  margin-top: 50px;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 20px 20px;
+  position: relative;
+  max-width: 1040px;
+   border: 1px rgba(23,55,83,0.2) solid;
+   border-radius:8px
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 26px;
+  font-style: normal;
+  font-family: 'Work Sans', sans-serif;
+  color:#35ae77;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+ font-family: Helvetica, Sans-Serif;
+}
+
+.header__button {
+  display: flex;
+  margin-bottom: 25px;
+  margin-top: 24px;
+}
+
+.button__validate {
+   height: 40px;
+  background-color: #1e88d2;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  margin-right: 24px;
+  font-weight: bold;
+  text-transform:uppercase;
+  padding:12px 40px;
+}
+
+.button__clear {
+  height: 40px;
+  background-color: black;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  margin-right: 20px;
+  font-weight: bold;
+  text-transform:uppercase;
+  padding:12px 40px;
+}
+
+.header__search {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.header__search--input {
+  width: 100%;
+  font-size: 16px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px rgba(23,55,83,0.2) solid;
+  border-radius: 8px;
+  padding-left: 16px;
+  line-height:24px;
+}
+
+.header__search--input::placeholder {
+  color: #8c8c8cc7;
+}
+
+.button__select {
+  width: 100%;
+  background-color: #fc5c63;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  margin-right: 10px;
+  height: 50px;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.text::-webkit-scrollbar {
+  width: 7px;
+}
+
+.text::-webkit-scrollbar-track {
+  margin-top: -40px;
+  margin-bottom: 160px;
+}
+
+.text::-webkit-scrollbar-thumb {
+  background-color: #05050526;
+  outline: 1px solid #05050526;
+  border-radius: 6px;
+}
+
+button {
+  cursor: pointer;
+}
+.body
+{
+	display:flex;
+	 
+    flex-wrap:wrap;
+    flex-direction:row;
+     justify-content: space-between;
+    align-content: space-between
+}
+.animal
+{
+	flex: 0 0 32.3333%;
+	height:300px;
+	box-shadow:0 2px 10px rgba(23,55,83,0.2);
+	padding:24px;
+	margin-bottom:16px;
+	border-radius:8px;
+}
+.animal-description
+{overflow: auto;
+    max-height: 175px;
+	color:#173753;
+	font-size:14px;
+	line-height:22px;
+	 font-family: 'Work Sans', sans-serif;
+	 font-weight: 300;
+	 
+}
+.animal-title
+{
+	color:#173753;
+}
+.animal-title h3 {
+	margin:0px 0px 8px;
+	padding:0px;
+	 font-family: 'Work Sans', sans-serif;
+	 font-weight: 600;
+}
+.animal-button
+{
+	background-color: #35ae77;
+    width: 100%;
+    border-radius: 35px;
+    padding: 11px;
+    border: 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+/*.animal {
+  position: static;
+  width: 325.33px;
+  height: 398px;
+  left: 690.67px;
+  top: 0px;
+  background: #ffffff;
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  flex: none;
+  order: 2;
+  flex-grow: 1;
+  margin: 0px 20px;
+}
+
+.animal-title {
+  position: static;
+  width: 277px;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+  letter-spacing: -0.02em;
+  line-height: 40px;
+  font-size: 32px;
+  font-weight: 900;
+  font-style: normal;
+  color: #050505;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+
+.animal-description {
+  position: static;
+  width: 277px;
+  height: 384px;
+  left: 0px;
+  top: 0px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8c8c8c;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+
+.animal-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  position: static;
+  width: 277px;
+  height: 64px;
+  left: 24px;
+  top: 12px;
+  background: #fc5c63;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 0px 10px;
+} */
+.animalSlected
+{
+	background:#1e88d2;
+	color:white;
+}
+.animalSlected div
+{color:white;
+}
+.animalSlected .animal-button
+{ 
+background-color:#173753;
+}
